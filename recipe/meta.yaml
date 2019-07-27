@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/slochower/pAPRika/archive/v{{ version }}.tar.gz
-  sha256: aaf32d584c0cc9662708e6355ca03227d58ddf616f4272be87ce3d6c4e696275
+  sha256: b423e994467b3004104e437389addb17d7e9b72553d130abff7e0bbf11bdc3aa 
 
 build:
   number: 0
