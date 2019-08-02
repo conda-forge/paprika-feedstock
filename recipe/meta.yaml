@@ -1,5 +1,5 @@
 {% set name = "paprika" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/slochower/pAPRika/archive/v{{ version }}.tar.gz
-  sha256: b423e994467b3004104e437389addb17d7e9b72553d130abff7e0bbf11bdc3aa 
+  sha256: 9e34904ebb49abcf6ce19c9435c53fce932135945b4452ceb690fbfd14bb0461 
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
