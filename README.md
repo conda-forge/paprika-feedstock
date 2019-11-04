@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About paprika
 =============
 
@@ -18,8 +14,15 @@ Summary: pAPRika is a toolkit for setting up, running, and analyzing free energy
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/paprika-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/paprika-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6242&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/paprika-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
