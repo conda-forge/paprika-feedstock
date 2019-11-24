@@ -1,5 +1,5 @@
 {% set name = "paprika" %}
-{% set version = "0.1.1" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/slochower/pAPRika/archive/v{{ version }}.tar.gz
-  sha256: 9e34904ebb49abcf6ce19c9435c53fce932135945b4452ceb690fbfd14bb0461 
+  sha256: 14e680bdee5d917428482caff6c6b4a5d5b8e415f5ac80778c6779c926c7f2bd
 
 build:
   number: 0
@@ -19,16 +19,16 @@ build:
 
 requirements:
   host:
-    - python
+    - python >= 3.6
     - setuptools
     - pip
 
   run:
-    - python
+    - python >= 3.6
     - numpy
     - scipy
     - setuptools
-    - pymbar
+    - pymbar >= 3.0.4
     - mdtraj
     - ambertools
 
