@@ -11,6 +11,7 @@ source:
   url: https://github.com/slochower/pAPRika/archive/v{{ version }}.tar.gz
   sha256: 8856162a2495d7dadf78e35ece8e8d47eb223d86ba3bddc660ddfe71a13bcdf8
 
+
 build:
   number: 0
   noarch: python
@@ -19,12 +20,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
     - pip
 
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     - setuptools
