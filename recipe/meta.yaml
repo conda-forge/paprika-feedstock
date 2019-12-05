@@ -29,7 +29,7 @@ requirements:
     - numpy
     - scipy
     - setuptools
-    - pymbar >=3.0.5
+    - pymbar >= 3.0.5
     - mdtraj
     - ambertools
 
