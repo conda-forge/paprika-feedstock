@@ -8,12 +8,12 @@ package:
 
 
 source:
-  url: https://github.com/slochower/pAPRika/archive/v{{ version }}.tar.gz
+  url: https://github.com/GilsonLabUCSD/pAPRika/archive/v{{ version }}.tar.gz
   sha256: 8b432fa4b7fa39db04bcc6887933b4d0650a82b7ea2bd569f3d07c37f6037d25
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -40,13 +40,13 @@ test:
     - paprika
 
 about:
-  home: https://github.com/slochower/pAPRika
+  home: https://github.com/GilsonLabUCSD/pAPRika
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: pAPRika is a toolkit for setting up, running, and analyzing free energy molecular dynamics simulations.
   doc_url: https://paprika.readthedocs.io/en/latest/
-  dev_url: https://github.com/slochower/pAPRika
+  dev_url: https://github.com/GilsonLabUCSD/pAPRika
 
 extra:
   recipe-maintainers:
