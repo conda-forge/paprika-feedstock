@@ -5,11 +5,13 @@ Home: https://github.com/slochower/pAPRika
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paprika-feedstock/blob/master/LICENSE.txt)
 
 Summary: pAPRika is a toolkit for setting up, running, and analyzing free energy molecular dynamics simulations.
 
+Development: https://github.com/slochower/pAPRika
 
+Documentation: https://paprika.readthedocs.io/en/latest/
 
 Current build status
 ====================
