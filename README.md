@@ -1,7 +1,7 @@
 About paprika
 =============
 
-Home: https://github.com/slochower/pAPRika
+Home: https://github.com/GilsonLabUCSD/pAPRika
 
 Package license: BSD-3-Clause
 
@@ -48,7 +48,7 @@ Once the `conda-forge` channel has been enabled, `paprika` can be installed with
 conda install paprika
 ```
 
-It is possible to list all of the versions of `paprika` available on your platform with:
+It is possible to list all the versions of `paprika` available on your platform with:
 
 ```
 conda search paprika --channel conda-forge
