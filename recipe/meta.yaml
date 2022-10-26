@@ -1,5 +1,5 @@
 {% set name = "paprika" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -9,29 +9,29 @@ package:
 
 source:
   url: https://github.com/GilsonLabUCSD/pAPRika/archive/v{{ version }}.tar.gz
-  sha256: 8b432fa4b7fa39db04bcc6887933b4d0650a82b7ea2bd569f3d07c37f6037d25
+  sha256: 0dc4fd3ddd9c9e8a39dba692c7d7df86be3243fcc8462b71f070bb6960946f1b
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
     - scipy
     - setuptools
-    - pymbar >=3.0.5
+    - pymbar >=4.0
     - mdtraj
-    - ambertools >=20.0
+    - ambertools >=22.0
 
 test:
   requires:
