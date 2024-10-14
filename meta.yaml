@@ -1,0 +1,63 @@
+{% set name = "paprika" %}
+{% set version = "1.3.0" %}
+
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+
+source:
+  url: https://github.com/GilsonLabUCSD/pAPRika/archive/v{{ version }}.tar.gz
+  sha256: 908cf569477f34901ca0e29bdaac846797500b94d6673fd37fd331500dced36b
+
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+
+requirements:
+  host:
+    - python >=3.8
+    - setuptools
+    - pip
+
+  run:
+    - python >=3.8
+    - numpy
+    - scipy
+    - parmed
+    - setuptools
+    - pymbar >=4.0.1
+    - openmm >=7.6.0
+    - mdtraj
+    - plumed
+    - pyyaml
+    - intermol
+    - ambertools >=22.0
+    - openff-units >=0.2.0
+    - openff-utilities
+
+test:
+  requires:
+    - pytest
+    - pytest-cov
+  imports:
+    - paprika
+
+about:
+  home: https://github.com/GilsonLabUCSD/pAPRika
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: pAPRika is a toolkit for setting up, running, and analyzing free energy molecular dynamics simulations.
+  doc_url: https://paprika.readthedocs.io/en/latest/
+  dev_url: https://github.com/GilsonLabUCSD/pAPRika
+
+extra:
+  recipe-maintainers:
+    - slochower
+    - nhenriksen
+    - jeff231li
